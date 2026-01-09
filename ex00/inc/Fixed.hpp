@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 10:06:17 by francesca         #+#    #+#             */
-/*   Updated: 2025/12/18 10:24:20 by francesca        ###   ########.fr       */
+/*   Updated: 2026/01/09 11:38:57 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <iostream>
 
 #ifndef FIXED_HPP
 # define FIXED_HPP
@@ -23,6 +21,8 @@
 # define RED "\033[31m"
 # define RESET "\033[0m"
 # define BLUE "\033[0;34m"
+
+#include <iostream>
 
 class Fixed{
     private:

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 10:38:13 by francesca         #+#    #+#             */
-/*   Updated: 2025/12/22 17:13:36 by francesca        ###   ########.fr       */
+/*   Updated: 2026/01/09 11:44:58 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ Fixed::Fixed(const int _value) : _rawBits(_value << _fractionalBits) {
 }
 
 // A constructor that takes a constant floating-point number
-Fixed::Fixed (const float value): _rawBits(static_cast<int>(std::roundf(value * (1 << _fractionalBits)))){
+Fixed::Fixed (const float value): _rawBits(static_cast<int>(roundf(value * (1 << _fractionalBits)))){
 }
 
 // getRawBits returns the raw value of the fixed-point value.

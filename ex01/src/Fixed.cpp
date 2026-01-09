@@ -42,7 +42,7 @@ Fixed::Fixed(const int _value) : _rawBits(_value << _fractionalBits) {
 }
 
 // A constructor that takes a constant floating-point number
-Fixed::Fixed (const float value): _rawBits(static_cast<int>(std::roundf(value * (1 << _fractionalBits))))
+Fixed::Fixed (const float value): _rawBits(static_cast<int>(roundf(value * (1 << _fractionalBits))))
 {
     std::cout << GREEN << "Float constructor called" << RESET << std::endl;
 }
